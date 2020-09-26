@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }

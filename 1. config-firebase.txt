@@ -1,0 +1,14 @@
+CONFIGURACIÓN INICIAL DE REACT CON FIREBASE:
+
+Luego de crear un proyecto para web en Firebase...
+
+1.
+    $ npm i firebase reactfire@next
+
+2. Crear firebase-config.js y exportar firebaseConfig de la consola de Firebase
+    $ touch src/firebase-config.js
+
+3. En index.jsx, envolver todo el componente padre existente con el componente FirebaseAppProvider, luego por recomendación, envolver con suspense el componente hijo inmmediato de FirebaseAppProvider. Luego en el en el atributo "fallback" ingresar un componente loading o una frase de que indica que se está conectando con FirebaseAppProvider.
+
+4. en App.jsx llamar el hook useFirebaseApp de "reactfire" 
+
