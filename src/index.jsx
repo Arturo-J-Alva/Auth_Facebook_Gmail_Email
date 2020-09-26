@@ -17,7 +17,7 @@ const store = createStore(
     {}, //estado inicial
     applyMiddleware(reduxThunk) //Middleware
 )
-console.log("REACT_APP_ENDPOINT:",REACT_APP_ENDPOINT)
+console.log("REACT_APP_ENDPOINT:",process.env.REACT_APP_ENDPOINT)
 ReactDOM.render(
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
         <Suspense fallback={"Conectando con firebase..."} >
