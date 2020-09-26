@@ -86,6 +86,7 @@ const Login = () => {
             </Helmet>
 
             <h1 className="text-center text-2xl text-red-700 my-2">Logéate con tu usuario</h1>
+            <h2> {process.env.REACT_APP_ENDPOINT} </h2>
             <FormAuth email={(dat) => setemail(dat)} password={(dat) => setpassword(dat)} type="login"
                 submit={submit} withGoogle={() => withGoogle()} withFacebook={() => withFacebook()}
             />
