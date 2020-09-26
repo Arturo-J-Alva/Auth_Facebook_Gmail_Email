@@ -13,7 +13,7 @@ const SignUp = ({history}) => {
         ev.preventDefault()
         //console.log("new user!")
         try {
-            const res = await firebase.auth().createUserWithEmailAndPassword(email, password)
+            /* const res =  */await firebase.auth().createUserWithEmailAndPassword(email, password)
             //console.log(res)
             history.push("/login")
         } catch (error) {
