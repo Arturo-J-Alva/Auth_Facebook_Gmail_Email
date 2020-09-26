@@ -1,4 +1,4 @@
-# RCA-TAILWIND START
+# Autenticación usando Facebook o Google, gracias a firebase.
 ## Viene con todos los paquetes necesarios para usar rutas, tailwindcss y redux-thunks principalmente.
 ## Recuerda descomentar los "env.development" de .gitignore.
 ### Arturo J. Alva - FullStack Dev
