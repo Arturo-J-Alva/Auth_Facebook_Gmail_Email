@@ -28,7 +28,7 @@ const Routes = () => {
         }
     }, [user, dispatch])
 
-    console.log('LoginState:', LoginState)
+    //console.log('LoginState:', LoginState)
 
     return (
         <BrowserRouter>

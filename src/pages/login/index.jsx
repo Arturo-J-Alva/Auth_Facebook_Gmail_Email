@@ -15,7 +15,7 @@ const Login = () => {
 
     async function submit(ev) {
         ev.preventDefault();
-        console.log("login!")
+        //console.log("login!")
         try {
             await firebase.auth().signInWithEmailAndPassword(email, password);
             const token = await firebase.auth()?.currentUser?.getIdToken(true);
@@ -33,11 +33,11 @@ const Login = () => {
     }
 
     async function withGoogle() {
-        console.log("login google!")
+        //console.log("login google!")
         const provider = new firebase.auth.GoogleAuthProvider()
         await firebase.auth().signInWithPopup(provider).then(
             async (result) => {
-                console.log("yeeeeh")
+                //console.log("yeeeeh")
                 //3 - pick the result and store the token
                 const token = await firebase.auth()?.currentUser?.getIdToken(true);
                 //4 - check if have token in the current user
@@ -56,11 +56,11 @@ const Login = () => {
     }
 
     async function withFacebook() {
-        console.log("login facebook!")
+        //console.log("login facebook!")
         const provider = new firebase.auth.FacebookAuthProvider()
         await firebase.auth().signInWithPopup(provider).then(
             async (result) => {
-                console.log("yeeeeh")
+                //console.log("yeeeeh")
                 //3 - pick the result and store the token
                 const token = await firebase.auth()?.currentUser?.getIdToken(true);
                 //4 - check if have token in the current user
